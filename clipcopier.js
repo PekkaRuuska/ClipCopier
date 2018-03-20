@@ -1,3 +1,16 @@
+/**
+ * ClipCopier v1.0
+ * 
+ * Copyright 2018 Pekka Ruuska
+ * Released under the MIT license
+ * 
+ * Copy text from element to clipboard.
+ *
+ * @author Pekka Ruuska
+ * @author Twitter: PekkaRuuska
+ *
+ */
+
 function copyToClipboard(selectors, separator){
 
     var selectorArr = selectors.split(','),
@@ -44,8 +57,9 @@ function copyToClipboard(selectors, separator){
             try {
                 document.execCommand('copy');
             }
-            catch{
+            catch (err){
                 console.log('Could not copy.');
+                console.log(err);
             }
 
             body.removeChild(hidden);
