@@ -49,19 +49,19 @@ __separator__ - String that separates the copied texts from each others.
 Copy from elements with certain id
 
 ```javascript
-copyToClipboard('#elementId');  // OUTPUT: Lorem ipsum
+copyToClipboard('#elementId');  // COPY: Lorem ipsum
 ```
 
 
 Copy from elements with certain class name
 
 ```javascript
-copyToClipboard('.class-name', ' ');  // OUTPUT: Lorem ipsum dolor sit amet
+copyToClipboard('.class-name', ' ');  // COPY: Lorem ipsum dolor sit amet
 ```
 
 
 Copy text from all specified elements.
 
 ```javascript
-copyToClipboard('#elementId, #anotherId', ' - '); // OUTPUT: Lorem ipsum - dolor sit amet
+copyToClipboard('#elementId, #anotherId', ' - '); // COPY: Lorem ipsum - dolor sit amet
 ```
