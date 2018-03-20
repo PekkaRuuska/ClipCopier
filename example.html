@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ClipCopier</title>
+
+    <script src="clipcopier.js"></script>
+
+    <style>
+        div {
+            padding: 0 0 20px 0;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id = "ipsum" class="lorem">
+        Lorem ipsum
+    </div>
+    <div id="dolor" class="lorem">
+        dolor sit amet
+    </div>
+    <div id="sit" class="lorem">
+        id rutrum porta lacus enim elit
+    </div>
+
+    <div>
+        <label>Copy elements with:</label>
+        <button onClick="copyToClipboard('.lorem', ' ');">class 'lorem'</button><br/>
+        <button onClick="copyToClipboard('#ipsum', ' - ');">id 'ipsum'</button> and use ' - ' as separator<br/>
+        <button onClick="copyToClipboard('#dolor, #sit', ' ');">ids 'dolor' and 'sit'</button>  and use ' ' as separator
+    </div>
+
+    <div>
+        <label>You can paste the copied text here:</label>
+        <textarea></textarea>
+    </div>
+
+</body>
+
+</html>
